@@ -64,6 +64,11 @@ header img {
   left: 40px;
   width: auto;
   height: 200px;
+  transition: transform 0.3s ease-in-out;
+}
+
+header img:hover {
+  transform: rotate(3.8deg);
 }
 
 .header-text {
@@ -204,6 +209,11 @@ input[type="checkbox"]:focus {
   justify-content: center;
   align-items: center;
   transform: rotate(-2.8deg);
+  transition: transform 0.6s ease-out;
+}
+
+.result-ticket:hover {
+  transform: rotate(0.8deg);
 }
 
 .ticket-group {
@@ -254,8 +264,16 @@ input[type="checkbox"]:focus {
     left: 30px;
   }
 
+  header img:hover {
+    transform: none;
+  }
+
   main {
     padding: 150px 30px;
+  }
+
+  .result-ticket:hover {
+    transform: none;
   }
 }
 
