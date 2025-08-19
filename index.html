@@ -19,6 +19,64 @@
     </p>
   </header>
 
+  <main>
+    <section>
+      <p class="header-text active">
+        Simulez en toute transparence le coût du nettoyage de vos bureaux
+        grâce à notre outil de tarification interactif.
+      </p>
+      <form action="">
+        <div class="form-container">
+          <div class="form-group-1">
+            <label for="officeArea">Surface des bureaux à nettoyer</label>
+            <input type="text" id="officeArea" name="officeArea" required placeholder="Saisie en m²" value="80"
+              autocomplete="off">
+          </div>
+
+          <div class="form-group-2">
+            <label for="cleaningFrequency">Fréquence du nettoyage</label>
+            <select id="cleaningFrequency" name="cleaningFrequency" required>
+              <option value="1">1x par semaine</option>
+              <option value="2" selected>2x par semaine</option>
+              <option value="5">Tous les jours</option>
+            </select>
+          </div>
+        </div>
+
+        <div class="form-group-2">
+          <label for="cleaningType">Options supplémentaires</label>
+          <div class="checkbox-group">
+            <input type="checkbox" id="cleaningType" name="cleaningType" value="windowCleaning" checked>
+            <label for="cleaningType">Nettoyage des fenêtres</label>
+          </div>
+        </div>
+      </form>
+
+      <div class="result-ticket">
+        <img src="assets/ticket.svg" alt="Ticket de tarification">
+        <div class="ticket-group">
+          <div class="ticket-container">
+            <div class="ticket-item">
+              <p class="ticket-title">Montant HT</p>
+              <p class="ticket-amount">264 €</p>
+            </div>
+
+            <div class="ticket-item">
+              <p class="ticket-title">TVA (20%)</p>
+              <p class="ticket-amount">52.80 €</p>
+            </div>
+          </div>
+
+          <div class="ticket-item">
+            <p class="ticket-title">Montant TTC</p>
+            <p class="ticket-amount-ttc">316.80 €</p>
+          </div>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <script src="script.js"></script>
 </body>
 
 </html>

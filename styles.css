@@ -72,3 +72,121 @@ header img {
   font-size: 1rem;
   color: var(--color-grey);
 }
+
+main {
+  flex: 1;
+  width: 100%;
+  max-width: 1920px;
+  padding: 100px 40px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+section {
+  width: 100%;
+  max-width: 600px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 100px;
+}
+
+form {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
+
+.form-container {
+  display: flex;
+  gap: 20px;
+}
+
+.form-group-1 {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+
+.form-group-2 {
+  width: 400px;
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+
+.checkbox-group {
+  display: flex;
+  gap: 10px;
+}
+
+.checkbox-group label {
+  font-weight: 400;
+}
+
+label {
+  font-size: 1rem;
+  font-weight: 600;
+}
+
+input {
+  padding: 12px;
+  border: 1px solid var(--color-dark);
+  border-radius: 6px;
+  font-size: 1rem;
+}
+
+select {
+  padding: 12px;
+  border: 1px solid var(--color-dark);
+  border-radius: 6px;
+  font-size: 1rem;
+}
+
+.result-ticket {
+  position: relative;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.ticket-group {
+  position: absolute;
+  width: 100%;
+  max-width: 380px;
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-start;
+}
+
+.ticket-container {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
+
+.ticket-item {
+  display: flex;
+  flex-direction: column;
+}
+
+.ticket-title {
+  font-size: 1rem;
+  font-weight: 600;
+  color: var(--color-grey);
+}
+
+.ticket-amount {
+  font-size: 1rem;
+  font-weight: 600;
+}
+
+.ticket-amount-ttc {
+  font-size: 2.25rem;
+  font-weight: 600;
+}
