@@ -1,0 +1,38 @@
+/* === Font Declarations === */
+@font-face {
+  font-family: "BDO Grotesk";
+  src: url(/assets/font/BDOGrotesk-VF.ttf) format("truetype");
+  font-display: swap;
+  font-weight: 100 900;
+  font-style: normal;
+}
+
+:root {
+  /* === Color System === */
+  /* Primary Colors */
+  --color-dark: #000000;
+  --color-white: #ffffff;
+
+  /* Grey Scale */
+  --color-grey: #727272;
+  --color-grey-2: #e5e5e5;
+
+  /* Blue Palette */
+  --color-dark-blue: #014b70;
+  --color-light-blue: #93cdee;
+}
+
+/* === Styles === */
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  font-family: "BDO Grotesk", sans-serif;
+  color: var(--color-dark);
+  background-color: var(--color-white);
+}
