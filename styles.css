@@ -139,6 +139,12 @@ input {
   border: 1px solid var(--color-dark);
   border-radius: 6px;
   font-size: 1rem;
+  transition: border-color 0.3s ease;
+}
+
+input:focus {
+  outline: none;
+  border-color: var(--color-dark);
 }
 
 select {
@@ -146,6 +152,48 @@ select {
   border: 1px solid var(--color-dark);
   border-radius: 6px;
   font-size: 1rem;
+  transition: border-color 0.3s ease;
+}
+
+select:focus {
+  outline: none;
+  border-color: var(--color-dark);
+}
+
+input[type="checkbox"] {
+  appearance: none;
+  -webkit-appearance: none;
+  -moz-appearance: none;
+  width: 18px;
+  height: 18px;
+  padding: 0;
+  border: 2px solid var(--color-dark);
+  border-radius: 3px;
+  background-color: var(--color-white);
+  cursor: pointer;
+  position: relative;
+  transition: all 0.3s ease;
+}
+
+input[type="checkbox"]:checked {
+  background-color: var(--color-dark);
+  border-color: var(--color-dark);
+}
+
+input[type="checkbox"]:checked::after {
+  content: "✓";
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  color: var(--color-white);
+  font-size: 12px;
+  font-weight: bold;
+}
+
+input[type="checkbox"]:focus {
+  border-color: var(--color-dark);
+  box-shadow: 0 0 0 2px rgba(0, 0, 0, 0.2);
 }
 
 .result-ticket {
