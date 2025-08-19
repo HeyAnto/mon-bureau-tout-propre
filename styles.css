@@ -193,12 +193,6 @@ select {
 
 /* === Media Queries === */
 /* Tablet */
-@media (max-width: 1920px) {
-  .active {
-    display: none;
-  }
-}
-
 @media (max-width: 768px) {
   header {
     padding: 20px 30px;
@@ -214,24 +208,19 @@ select {
   }
 }
 
+/* Mobile */
 @media (max-width: 630px) {
-  .active {
-    display: block;
-  }
-
-  .hide {
-    display: none;
-  }
-
   header {
+    flex-direction: column;
     justify-content: center;
     align-items: center;
+    gap: 50px;
   }
 
   header img {
     position: relative;
-    top: 0px;
-    left: 0px;
+    top: 0;
+    left: 0;
     width: auto;
     height: 150px;
   }
