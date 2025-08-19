@@ -190,3 +190,91 @@ select {
   font-size: 2.25rem;
   font-weight: 600;
 }
+
+/* === Media Queries === */
+/* Tablet */
+@media (max-width: 1920px) {
+  .active {
+    display: none;
+  }
+}
+
+@media (max-width: 768px) {
+  header {
+    padding: 20px 30px;
+  }
+
+  header img {
+    top: 20px;
+    left: 30px;
+  }
+
+  main {
+    padding: 150px 30px;
+  }
+}
+
+@media (max-width: 630px) {
+  .active {
+    display: block;
+  }
+
+  .hide {
+    display: none;
+  }
+
+  header {
+    justify-content: center;
+    align-items: center;
+  }
+
+  header img {
+    position: relative;
+    top: 0px;
+    left: 0px;
+    width: auto;
+    height: 150px;
+  }
+
+  main {
+    padding: 50px 30px;
+  }
+
+  section {
+    gap: 50px;
+  }
+
+  .form-container {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+  }
+
+  .form-group-2 {
+    width: 100%;
+  }
+
+  .result-ticket img {
+    width: 100%;
+  }
+
+  .ticket-group {
+    padding: 0px 20px;
+  }
+
+  .ticket-item {
+    display: flex;
+    flex-direction: column;
+  }
+}
+
+@media (max-width: 375px) {
+  .result-ticket img {
+    scale: 1.2;
+  }
+
+  .ticket-group {
+    max-width: 400px;
+    padding: 0;
+  }
+}
