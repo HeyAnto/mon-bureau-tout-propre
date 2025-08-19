@@ -1,5 +1,18 @@
 # Mon Bureau Tout Propre
 
+<div align="center">
+  <table>
+    <tr>
+      <td align="left">
+        <img src="assets/logo-badge.webp" alt="Logo Mon Bureau Tout Propre" width="200">
+      </td>
+      <td align="right">
+        <img src="assets/ticket-exemple.webp" alt="Exemple de ticket de tarification" width="300">
+      </td>
+    </tr>
+  </table>
+</div>
+
 ## 📋 Contexte du projet
 
 **Mon Bureau Tout Propre** est un simulateur de tarification interactif qui permet de calculer en toute transparence le coût du nettoyage de bureaux. Cet outil web offre une interface intuitive pour estimer le prix d'un service de nettoyage professionnel en fonction de différents paramètres.
