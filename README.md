@@ -1,6 +1,5 @@
-# Mon Bureau Tout Propre
-
 <div align="center">
+  <h1>Mon Bureau Tout Propre</h1>
   <table>
     <tr>
       <td align="left">
