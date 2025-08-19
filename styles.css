@@ -203,6 +203,7 @@ input[type="checkbox"]:focus {
   display: flex;
   justify-content: center;
   align-items: center;
+  transform: rotate(-2.8deg);
 }
 
 .ticket-group {
@@ -293,6 +294,10 @@ input[type="checkbox"]:focus {
     width: 100%;
   }
 
+  .result-ticket {
+    transform: rotate(0deg);
+  }
+
   .result-ticket img {
     width: 100%;
   }
@@ -308,12 +313,12 @@ input[type="checkbox"]:focus {
 }
 
 @media (max-width: 375px) {
-  .result-ticket img {
-    scale: 1.2;
-  }
-
   .ticket-group {
     max-width: 400px;
     padding: 0;
+  }
+
+  .result-ticket img {
+    scale: 1.3;
   }
 }
