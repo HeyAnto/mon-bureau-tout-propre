@@ -2,6 +2,7 @@
 const BASE_PRICE_PER_M2 = 1.5;
 const TVA_RATE = 0.2;
 const WINDOW_CLEANING_SURCHARGE = 0.1;
+const MAX_SURFACE = 10000;
 
 // Éléments
 const officeAreaInput = document.getElementById("officeArea");
@@ -63,7 +64,7 @@ function resetDisplay() {
 // Valider la saisie
 function validateSurfaceInput(event) {
   const value = event.target.value;
-  // Sécurité
+  // Sécurité - Suppression des caractères non autorisés
   const validValue = value.replace(/[^0-9.,]/g, "");
   const normalizedValue = validValue.replace(",", ".");
 
@@ -73,6 +74,41 @@ function validateSurfaceInput(event) {
   } else {
     event.target.value = normalizedValue;
   }
+
+  // Sécurité - Vérification de la valeur maximale
+  const numericValue = parseFloat(event.target.value);
+  if (numericValue > MAX_SURFACE) {
+    event.target.value = MAX_SURFACE.toString();
+    showMaxValueWarning();
+  }
+}
+
+// Avertissement pour la valeur maximale
+function showMaxValueWarning() {
+  let warningElement = document.getElementById("surface-warning");
+
+  if (!warningElement) {
+    warningElement = document.createElement("div");
+    warningElement.id = "surface-warning";
+    warningElement.style.color = "#e74c3c";
+    warningElement.style.fontSize = "0.875rem";
+    warningElement.style.marginTop = "0.25rem";
+    warningElement.style.fontWeight = "500";
+
+    const officeAreaInput = document.getElementById("officeArea");
+    officeAreaInput.parentNode.insertBefore(
+      warningElement,
+      officeAreaInput.nextSibling
+    );
+  }
+
+  warningElement.textContent = `Surface maximale autorisée : ${MAX_SURFACE.toLocaleString()} m²`;
+
+  setTimeout(() => {
+    if (warningElement) {
+      warningElement.textContent = "";
+    }
+  }, 3000);
 }
 
 // Écouteurs d'événements
