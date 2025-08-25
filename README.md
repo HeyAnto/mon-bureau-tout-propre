@@ -1,11 +1,11 @@
 <div align="center">
   <h1>Mon Bureau Tout Propre</h1>
-  <table style="border: none !important;">
+  <table>
     <tr>
-      <td align="left" style="border: none !important;">
+      <td align="left">
         <img src="assets/images/logo-badge.webp" alt="Logo Mon Bureau Tout Propre" width="200">
       </td>
-      <td align="right" style="border: none !important;">
+      <td align="right">
         <img src="assets/images/ticket-exemple.webp" alt="Exemple de ticket de tarification" width="300">
       </td>
     </tr>
