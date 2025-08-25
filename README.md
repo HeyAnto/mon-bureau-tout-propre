@@ -1,17 +1,11 @@
-<style>
-  table, td {
-    border: none !important;
-  }
-</style>
-
 <div align="center">
   <h1>Mon Bureau Tout Propre</h1>
-  <table>
+  <table style="border: none !important;">
     <tr>
-      <td align="left">
+      <td align="left" style="border: none !important;">
         <img src="assets/images/logo-badge.webp" alt="Logo Mon Bureau Tout Propre" width="200">
       </td>
-      <td align="right">
+      <td align="right" style="border: none !important;">
         <img src="assets/images/ticket-exemple.webp" alt="Exemple de ticket de tarification" width="300">
       </td>
     </tr>
